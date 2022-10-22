@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assign04.css" />
+    <title>Form basics(assign04)-301138611</title>
+  </head>
+  <body>
+    <div id="allPage">
+      <header>
+        <a href="https://www.centennialcollege.ca/" target="_blank"
+          ><img src="logo.jpeg" alt="banner logo"
+        /></a>
+        <div class="headertxt">
+          <h1>Centennial College</h1>
+          <h2>Continuining Education course/ Instructor Evaluation</h2>
+        </div>
+      </header>
+      <div class="discript">
+        <p>
+          Please read each statement carefully and consider each one
+          individually. Use the <b>computer card</b> to make your choice(use a
+          pencil to fill the space). *Give only <b>one answer</b> for each
+          question.
+        </p>
+      </div>
+      <form
+        action="http://studentweb.cencol.ca/pignac/results.php"
+        method="post"
+      >
+        <fieldset class="wholefield">
+          <div class="block1">
+            <p>
+              <label for="courseInfo">Course Name/Code:</label>
+              <input
+                type="text"
+                name="courseInfo"
+                id="courseInfo"
+                size="40"
+                value=""
+              />
+            </p>
+            <div class="semester-year">
+              <div class="semester">
+                <label for="sem">Semester:</label>
+                <input type="radio" name="sem1" value="Fall" />Fall
+                <input type="radio" name="sem2" />Winter
+                <input type="radio" name="sem3" />Spring/Summer
+              </div>
+              <div class="year">
+                <label for="year">Year:</label>
+                <select name="year" id="year">
+                  <option value="Fall 2021">Fall 2021</option>
+                  <option value="Winter 2022">Winter 2022</option>
+                  <option value="Summer 2022">Summer 2022</option>
+                  <option value="Fall 2022">Fall 2022</option>
+                </select>
+              </div>
+            </div>
+            <p>
+              <label for="instructor">Instructor:</label>
+              <input
+                type="text"
+                id="instructor"
+                name="instructor"
+                size="30"
+                value=""
+              />
+            </p>
+          </div>
+
+          <div class="block2">
+            <p class="stitle">Instructor</p>
+            <div class="instruc">
+              <p>How would you rate the instructor's:</p>
+              <fieldset class="fields">
+                <label for="oneQ" class="multiple"
+                  >1. Knowledge of subject?</label
+                >
+                <div class="radio-group">
+                  <span
+                    ><input
+                      type="radio"
+                      name="oneQ"
+                      value="Excellent"
+                    />Excellent</span
+                  >
+                  <span
+                    ><input type="radio" name="oneQ" value="Good" />Good</span
+                  >
+                  <span
+                    ><input type="radio" name="oneQ" value="Fair" />Fair</span
+                  >
+                  <span
+                    ><input
+                      type="radio"
+                      name="oneQ"
+                      value="Not Satisfactory"
+                    />Not Satisfactory</span
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="fields">
+                <label for="twoQ" class="multiple">2. helpfulness?</label>
+                <div class="radio-group">
+                  <span
+                    ><input
+                      type="radio"
+                      name="twoQ"
+                      value="Excellent"
+                    />Excellent</span
+                  >
+                  <span
+                    ><input type="radio" name="twoQ" value="Good" />Good</span
+                  >
+                  <span
+                    ><input type="radio" name="twoQ" value="Fair" />Fair</span
+                  >
+                  <span
+                    ><input
+                      type="radio"
+                      name="twoQ"
+                      value="Not Satisfactory"
+                    />Not Satisfactory</span
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="fields">
+                <label for="threeQ" class="multiple"
+                  >3. courtesy and respect for all students?</label
+                >
+                <div class="radio-group">
+                  <span
+                    ><input
+                      type="radio"
+                      name="threeQ"
+                      value="Excellent"
+                    />Excellent</span
+                  >
+                  <span
+                    ><input type="radio" name="threeQ" value="Good" />Good</span
+                  >
+                  <span
+                    ><input type="radio" name="threeQ" value="Fair" />Fair</span
+                  >
+                  <span
+                    ><input
+                      type="radio"
+                      name="threeQ"
+                      value="Not Satisfactory"
+                    />Not Satisfactory</span
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="fields">
+                <label for="fourQ" class="multiple"
+                  >4. communication skills?</label
+                >
+                <div class="radio-group">
+                  <span
+                    ><input
+                      type="radio"
+                      name="fourQ"
+                      value="Excellent"
+                    />Excellent</span
+                  >
+                  <span
+                    ><input type="radio" name="fourQ" value="Good" />Good</span
+                  >
+                  <span
+                    ><input type="radio" name="fourQ" value="Fair" />Fair</span
+                  >
+                  <span
+                    ><input type="radio" name="fourQ" value="unSatisf" />Not
+                    Satisfactory</span
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="fields">
+                <label for="fiveQ" class="multiple"
+                  >5. overall performance?</label
+                >
+                <div class="radio-group">
+                  <span
+                    ><input
+                      type="radio"
+                      name="fiveQ"
+                      value="Excellent"
+                    />Excellent</span
+                  >
+                  <span
+                    ><input type="radio" name="fiveQ" value="Good" />Good</span
+                  >
+                  <span
+                    ><input type="radio" name="fiveQ" value="Fair" />Fair</span
+                  >
+                  <span
+                    ><input type="radio" name="fiveQ" value="unSatisf" />Not
+                    Satisfactory</span
+                  >
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="course">
+              <p class="stitle">Course</p>
+              <fieldset class="fields">
+                <label for="sixQ" class="multiple"
+                  >6. How would you rate the course materials?</label
+                >
+                <div class="radio-group">
+                  <span
+                    ><input
+                      type="radio"
+                      name="sixQ"
+                      value="Excellent"
+                    />Excellent</span
+                  >
+                  <span
+                    ><input type="radio" name="sixQ" value="Good" />Good</span
+                  >
+                  <span
+                    ><input type="radio" name="sixQ" value="Fair" />Fair</span
+                  >
+                  <span
+                    ><input type="radio" name="sixQ" value="unSatisf" />Not
+                    Satisfactory</span
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="fields">
+                <label for="sevenQ" class="multiple"
+                  >7. overall performance?</label
+                >
+                <div class="radio-group">
+                  <span
+                    ><input
+                      type="radio"
+                      name="sevenQ"
+                      value="Excellent"
+                    />Excellent</span
+                  >
+                  <span
+                    ><input type="radio" name="sevenQ" value="Good" />Good</span
+                  >
+                  <span
+                    ><input type="radio" name="sevenQ" value="Fair" />Fair</span
+                  >
+                  <span
+                    ><input type="radio" name="sevenQ" value="unSatis" />Not
+                    Satisfactory</span
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="fields">
+                <label for="eightQ" class="multiple"
+                  >8. overall performance?</label
+                >
+                <div class="radio-group">
+                  <span>
+                    <input
+                      type="radio"
+                      name="eightQ"
+                      value="Excellent"
+                    />Excellent
+                  </span>
+                  <span
+                    ><input type="radio" name="eightQ" value="Good" />Good</span
+                  >
+                  <span
+                    ><input type="radio" name="eightQ" value="Fair" />Fair</span
+                  >
+                  <span
+                    ><input type="radio" name="eightQ" value="unSatis" />Not
+                    Satisfactory</span
+                  >
+                </div>
+              </fieldset>
+            </div>
+            <div class="Ginfo">
+              <p class="stitle">General Information</p>
+              <fieldset class="fields">
+                <label for="nineQ" class="multiple"
+                  >9. Was the course outline reviewed/explained at the beginning
+                  of your course?</label
+                >
+                <div class="radio-group">
+                  <span
+                    ><input
+                      type="radio"
+                      name="nineQ"
+                      value="Excellent"
+                    />Excellent</span
+                  >
+                  <span
+                    ><input type="radio" name="nineQ" value="Good" />Good</span
+                  >
+                  <span
+                    ><input type="radio" name="nineQ" value="Fair" />Fair</span
+                  >
+                  <span
+                    ><input
+                      type="radio"
+                      name="nineQ"
+                      value="Not Satisfactory"
+                    />Not Satisfactory</span
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="fields">
+                <label for="tenQ" class="multiple"
+                  >10. Would you recommend this course to a friend with the same
+                  interests?</label
+                >
+                <div class="radio-group">
+                  <span
+                    ><input
+                      type="radio"
+                      name="tenQ"
+                      value="Excellent"
+                    />Excellent</span
+                  >
+                  <span
+                    ><input type="radio" name="tenQ" value="Good" />Good</span
+                  >
+                  <span
+                    ><input type="radio" name="tenQ" value="Fair" />Fair</span
+                  >
+                  <span
+                    ><input type="radio" name="tenQ" value="unSatis" />Not
+                    Satisfactory</span
+                  >
+                </div>
+              </fieldset>
+            </div>
+            <div class="written">
+              <p class="stitle">
+                <span>Any other comments</span> (Please use the back of the
+                computer card or this paper if necessary)
+              </p>
+
+              <div>
+                <label for="aboutCourse" class="shortA"
+                  >11. What is the best thing about this course?</label
+                >
+                <textarea
+                  name="elevenQ"
+                  id="aboutCourse"
+                  height="30"
+                  width="auto"
+                  cols="80"
+                  rows="5"
+                ></textarea>
+              </div>
+
+              <div>
+                <label for="feedback" class="shortA"
+                  >12. How could we improve this course?</label
+                >
+                <textarea
+                  name="twelveQ"
+                  id="feedback"
+                  height="0"
+                  width="auto"
+                  cols="80"
+                  rows="5"
+                ></textarea>
+              </div>
+
+              <div>
+                <label for="other" class="shortA">13. Other: </label>
+                <textarea
+                  name="LastQ"
+                  id="other"
+                  cols="80"
+                  rows="5"
+                  placeholder="other"
+                >
+                </textarea>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Submit" />
+          </div>
+          <p class="thankmsg">Thank you! We pay attention for your feedback!</p>
+        </fieldset>
+      </form>
+      <footer>
+        <p>
+          Web:
+          <a
+            href="https://www.centennialcollege.ca/?utm_source=hsm&utm_medium=search&utm_campaign=alwayson&gclid=CjwKCAiAqIKNBhAIEiwAu_ZLDjaV0rG3c4zgN-MwDnTErstvLBzxHsJAYIJfJi5xVL0hTVHvRO5IRhoCXYgQAvD_BwE&gclsrc=aw.ds"
+            target="_blank"
+          >
+            www.centennialcollege.ca/continuing education</a
+          >
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Email:
+          <a href="mailto:nhsim1@my.centennialcollege.ca" target="_blank">
+            nhsim1@my.centennialcollege.ca</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

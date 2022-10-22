@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment2</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>CREATE YOUR TABLE HERE</h1>
+      <form>
+        <div class="input-container">
+          <input
+            type="number"
+            name="row"
+            value=""
+            id="row"
+            placeholder="row number"
+            min="0"
+          />
+          <input
+            type="number"
+            name="col"
+            value=""
+            id="col"
+            placeholder="column number"
+            min="0"
+          />
+        </div>
+        <div class="click">
+          <button id="click-handler" type="submit">
+            Click here to draw a table
+          </button>
+        </div>
+      </form>
+
+      <div id="table"></div>
+      <footer>
+        <br />
+        <p>&copy;COMP125 - Assginment2 Nayeon Shim 301138611</p>
+      </footer>
+    </div>
+
+    <script src="./assignment2.js"></script>
+  </body>
+</html>

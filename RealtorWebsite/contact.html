@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Na-Realtor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Na-Realtor</h1>
+      <nav>
+        <div class="item-home"><a href="termProject.html">Home</a></div>
+        <div class="item"><a href="list.html">Sales</a></div>
+        <div class="item"><a href="contact.html">Contact</a></div>
+        <div class="item"><a href="site.html">Site & Credit</a></div>
+        <div class="menu"><i class="fas fa-bars"></i></div>
+      </nav>
+    </header>
+    <main>
+      <section class="title">
+        <h1>Maisie Shim</h1>
+        <button><i class="fas fa-share-alt"></i> Share</button>
+      </section>
+      <section class="contact">
+        <div class="box">
+          <div class="title">Contact Me!</div>
+          <div class="contact-container">
+            <form
+              action="mailto:nshim1@my.centennialcollege.ca"
+              method="post"
+              class="contact-form"
+            >
+              <div class="row">
+                <input type="text" name="firstName" placeholder="First name" />
+                <input type="text" name="lastName" placeholder="Last name" />
+              </div>
+              <div class="row">
+                <input type="text" name="phone" placeholder="Phone" />
+                <input type="email" name="email" placeholder="Your Email" />
+              </div>
+              <div class="row">
+                <input
+                  type="number"
+                  name="numOfBedrooms"
+                  placeholder="Number of bedrooms"
+                  min="0"
+                />
+                <input
+                  type="number"
+                  name="numOfBathrooms"
+                  placeholder="Number of bathrooms"
+                  min="0"
+                />
+              </div>
+              <div class="row">
+                <input
+                  type="text"
+                  name="range"
+                  id="priceRange"
+                  placeholder="$ Desired price range"
+                />
+              </div>
+              <div class="row">
+                <span class="radio-group">
+                  <input type="radio" name="type" id="house" />
+                  <label for="house">House</label>
+                </span>
+                <span class="radio-group">
+                  <input type="radio" name="type" id="condom" />
+                  <label for="condom">Condominum</label>
+                </span>
+              </div>
+              <div class="row">
+                <textarea name="comments" placeholder="Comments"></textarea>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="info">
+        <div class="row">
+          <div class="col">
+            <a href="termProject.html">Home</a>
+            <a href="list.html">List</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://unsplash.com/s/photos/real-estate"
+              >Unsplash Photos</a
+            >
+            <a href="https://fontawesome.com/v5.15/icons">Font-Awesome</a>
+          </div>
+          <div class="col">
+            <a href="list1.html">Detail Page 1</a>
+            <a href="list2.html">Detail Page 2</a>
+            <a href="list3.html">Detail Page 3</a>
+            <a
+              href="https://www.realtor.ca/agent/1595919/tony-azzopardi-1396-don-mills-rd-unit-b-121-toronto-ontario-m3b0a7"
+              >Reference site</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="social">
+        <strong>Stay Connected</strong>
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
